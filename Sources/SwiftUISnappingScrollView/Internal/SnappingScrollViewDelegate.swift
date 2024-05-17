@@ -55,7 +55,7 @@ internal class SnappingScrollViewDelegate: NSObject, ObservableObject, UIScrollV
             }
             .sorted { $0.distance(to: targetOffset.x) < $1.distance(to: targetOffset.x) }
             .first?
-            .resolving(targetOffset.y) ?? minX
+            .resolving(targetOffset.x) ?? minX
         
         targetOffset.y = localFrames
             .reduce([PointRange(start: minY, end: maxY)]) { values, frame in
