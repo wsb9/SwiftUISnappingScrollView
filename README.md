@@ -3,6 +3,7 @@
 Add snapping behaviour to a SwiftUI ScrollView.
 
 > [!WARNING]
+> This fork has fixed building with Xcode 15.4 (it was complaining about iOS 14 API usage) and fixed broken axis on horizontal scroll.
 > This package is no longer maintained. Use [scrollTargetBehaviour](https://developer.apple.com/documentation/swiftui/view/scrolltargetbehavior(_:)) instead.
 
 ## SnappingScrollView
